@@ -26,7 +26,7 @@
 
 * **Detalhes de implementação:**
 
-    * É necessário disponibilizar uma tela para criação/edição de jogos;
+    * É necessário disponibilizar uma tela para consulta, cadastro, edição e exclusão de jogos;
 
     * É necessário disponibilizar uma listagem com:
 
@@ -38,16 +38,16 @@
 
         * ação de cadastro de um jogo;
 
-        * ação de atualização de um jogo;
+        * ação de edição de um jogo;
 
-        * ação de remoção de um jogo;
+        * ação de exclusão de um jogo;
 
 É preciso disponibilizar meios para que sejam acessadas as informações de:
 
 * Todos os jogos;
 * Os jogos de um determinado gênero;
-* Os jogos de um determinado fornecedor
-* Os jogos pelo seu identificador único por um identificador único.
+* Os jogos de um determinado fornecedor;
+* Os jogos pelo seu identificador único.
 
 ### **Requisitos técnicos**
 
@@ -63,7 +63,7 @@
 
 * É necessário criar testes unitários;
 
-* Os dados devem ser salvos em banco;
+* Os dados devem ser salvos em banco de dados;
 
 * A sua aplicação deve conter um arquivo README explicando o funcionamento e a solução adotada na sua implementação do desafio.
 
@@ -93,7 +93,7 @@
 
 * **Faça um fork do projeto:**
 
-    * https://github.com/LRSS1/teste
+    * https://github.com/LRSS1/processo_seletivo_dev_pl
 
 * **Ao finalizar a sua aplicação, crie um pull request no projeto de origem.**
 
