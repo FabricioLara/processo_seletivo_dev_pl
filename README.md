@@ -71,7 +71,7 @@
 
 * Quanto à segurança, sua solução será, inicialmente pública, você está construindo um MVP, não se preocupe com isso;
 
-* Apesar do seu objetivo ser construir um MVP, sua arquitetura, bem como seu código será continuado pelos jogos de desenvolvimento, devendo ser levado em conta a manutenibilidade exigida por causa da complexidade do código.
+* Apesar do seu objetivo ser construir um MVP, sua arquitetura, bem como seu código será continuado pelos times de desenvolvimento, devendo ser levado em conta a manutenibilidade exigida por causa da complexidade do código.
 
 ### **Observações/Dicas**
 
