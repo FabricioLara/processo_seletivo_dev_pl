@@ -1,0 +1,4 @@
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Comum.Interfaces\bin\Debug\Desafio.Game.Comum.Interfaces.dll
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Comum.Interfaces\bin\Debug\Desafio.Game.Comum.Interfaces.pdb
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Comum.Interfaces\obj\Debug\Desafio.Game.Comum.Interfaces.dll
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Comum.Interfaces\obj\Debug\Desafio.Game.Comum.Interfaces.pdb

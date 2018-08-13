@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Game.Web", "Desafio.Game.Web\Desafio.Game.Web.csproj", "{0A308282-E8B3-440C-ADB3-433ADCCF1A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Game.Dominio", "Desafio.Game.Dominio\Desafio.Game.Dominio.csproj", "{34F955D6-B80E-476C-B10C-EE1119056A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Game.Core", "Desafio.Game.Core\Desafio.Game.Core.csproj", "{0A00BA19-F3A9-4ABA-8ED1-202139393A78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{5FEBEC86-0215-44E4-B122-7381F02B0C7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{88504EC3-988C-43BE-966A-E408B31FB27A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Game.Comum.Entitys", "Desafio.Game.Comum.Entity\Desafio.Game.Comum.Entitys.csproj", "{1B4D8B2B-3ABD-482B-939C-191D1F09B13C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comum", "Comum", "{16F70863-D70A-476E-970D-CBB074D3020A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Game.Comum.Interfaces", "Desafio.Game.Comum.Interfaces\Desafio.Game.Comum.Interfaces.csproj", "{6C0BEB70-6BFA-411B-9465-55678A0FFAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A308282-E8B3-440C-ADB3-433ADCCF1A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A308282-E8B3-440C-ADB3-433ADCCF1A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A308282-E8B3-440C-ADB3-433ADCCF1A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A308282-E8B3-440C-ADB3-433ADCCF1A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F955D6-B80E-476C-B10C-EE1119056A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F955D6-B80E-476C-B10C-EE1119056A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F955D6-B80E-476C-B10C-EE1119056A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F955D6-B80E-476C-B10C-EE1119056A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A00BA19-F3A9-4ABA-8ED1-202139393A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A00BA19-F3A9-4ABA-8ED1-202139393A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A00BA19-F3A9-4ABA-8ED1-202139393A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A00BA19-F3A9-4ABA-8ED1-202139393A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4D8B2B-3ABD-482B-939C-191D1F09B13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4D8B2B-3ABD-482B-939C-191D1F09B13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4D8B2B-3ABD-482B-939C-191D1F09B13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4D8B2B-3ABD-482B-939C-191D1F09B13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0BEB70-6BFA-411B-9465-55678A0FFAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0BEB70-6BFA-411B-9465-55678A0FFAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0BEB70-6BFA-411B-9465-55678A0FFAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0BEB70-6BFA-411B-9465-55678A0FFAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34F955D6-B80E-476C-B10C-EE1119056A60} = {5FEBEC86-0215-44E4-B122-7381F02B0C7A}
+		{0A00BA19-F3A9-4ABA-8ED1-202139393A78} = {88504EC3-988C-43BE-966A-E408B31FB27A}
+		{1B4D8B2B-3ABD-482B-939C-191D1F09B13C} = {16F70863-D70A-476E-970D-CBB074D3020A}
+		{6C0BEB70-6BFA-411B-9465-55678A0FFAAF} = {16F70863-D70A-476E-970D-CBB074D3020A}
+	EndGlobalSection
+EndGlobal

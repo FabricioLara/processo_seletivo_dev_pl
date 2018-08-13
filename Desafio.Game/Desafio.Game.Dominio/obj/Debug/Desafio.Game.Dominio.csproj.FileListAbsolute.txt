@@ -1,0 +1,4 @@
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Dominio\bin\Debug\Desafio.Game.Dominio.dll
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Dominio\bin\Debug\Desafio.Game.Dominio.pdb
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Dominio\obj\Debug\Desafio.Game.Dominio.dll
+C:\Users\fas_c\Documents\Visual Studio 2017\Projects\Desafio.Game\Desafio.Game.Dominio\obj\Debug\Desafio.Game.Dominio.pdb

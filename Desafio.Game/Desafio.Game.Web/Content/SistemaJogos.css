@@ -1,0 +1,81 @@
+﻿.navbar-inverse .navbar-brand {
+    color: #D34013 !important;
+}
+.navbar navbar-inverse {
+    background-color: #27363C;
+}
+
+
+/*Propriedades pagina Home*/
+
+
+input,
+select,
+textarea {
+    max-width: 100% !important;
+}
+
+
+#btnSalvar{
+   display:inline-block;
+   margin-right:10px;
+   border:none;
+}
+
+#btnAtualizar{
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#btnCancelar {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+
+#btnSalvarEdit {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#btnAtualizarEdit {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#btnCancelarEdit {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#btnEditar{
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#btnExcluir {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+}
+
+#boxFormulario {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.boxPesquisa{
+    display:block;
+    margin-top:23px;
+    margin-bottom:30px;
+}
+
+
+
+

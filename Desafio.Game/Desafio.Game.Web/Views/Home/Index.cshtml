@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@section scripts {
+    <script src="~/Scripts/knockout-3.4.2.js"></script>
+    <script src="~/Scripts/knockout-3.4.2.debug.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jogoViewModel.js"></script>
+}
+
+<div id="boxFormulario" style="display:block; margin-top: 20px;">
+    <div class="row">
+        <form id="formJogos" name="formJogos">
+            <div id="formEditar" data-bind="if: Jogo" style="display:none;">
+                <div class="col-md-5">
+                   <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="Codigo">Código</label>
+                            <input type="text" class="form-control" id="txtId" name="txtId" data-bind="value: Jogo().Id" disabled="disabled">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="Titulo">Título</label>
+                            <input type="text" class="form-control" id="txtTitulo" name="txtTitulo" data-bind="value: Jogo().Titulo" placeholder="Digite o título do jogo">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="Genero">Gênero</label>
+                            <input type="text" class="form-control" id="txtGenero" name="txtGenero" data-bind="value: Jogo().Genero" placeholder="Digite o gênero do jogo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Plataforma">Plataforma</label>
+                                <input type="text" id="txtPlataforma" name="txtPlataforma" data-bind="value: Jogo().Plataforma" placeholder="Digite a plataforma do jogo" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Fornecedor">Fornecedor</label>
+                                <input type="text" id="txtFornecedor" name="txtFornecedor" data-bind="value: Jogo().Fornecedor" placeholder="Digite o fornecedor do jogo" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Descrição">Descrição</label>
+                                <textarea type="text" id="txtDescricao" name="txtDescricao" data-bind="value: Jogo().Descricao" maxlength="255" placeholder="Digite a descrição do jogo" cols="5" rows="10" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Links">Links</label>
+                                <input type="text" id="txtLinks" name="txtLinks" data-bind="value: Jogo().Link" placeholder="Digite o link da compra:ex Submarino, Saraiva, etc" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="btn-group">
+                                <input type="button" data-bind="click: Salvar" id="btnSalvarEdit" name="btnSalvar" value="Salvar" class="btn-sm btn-info" />
+                                <input type="button" data-bind="click: Atualizar" id="btnAtualizarEdit" name="btnAtualizar" value="Atualizar" class="btn-sm btn-success" />
+                                <input type="button" data-bind="click: Cancelar" name="btnCancelar" id="btnCancelarEdit" value="Cancelar" class="btn-sm btn-warning" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="formNovo" data-bind="ifnot: Jogo">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="Codigo">Código</label>
+                            <input type="text" class="form-control" id="txtId" name="txtId" data-bind="value: Id" disabled="disabled">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="Titulo">Título</label>
+                            <input type="text" class="form-control" id="txtTitulo" name="txtTitulo" data-bind="value: Titulo" placeholder="Digite o título do jogo">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="Genero">Gênero</label>
+                            <input type="text" class="form-control" id="txtGenero" name="txtGenero" data-bind="value: Genero" placeholder="Digite o gênero do jogo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Plataforma">Plataforma</label>
+                                <input type="text" id="txtPlataforma" name="txtPlataforma" data-bind="value: Plataforma" placeholder="Digite a plataforma do jogo" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Fornecedor">Fornecedor</label>
+                                <input type="text" id="txtFornecedor" name="txtFornecedor" data-bind="value: Fornecedor" placeholder="Digite o fornecedor do jogo" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Descrição">Descrição</label>
+                                <textarea type="text" id="txtDescricao" name="txtDescricao" data-bind="value: Descricao" maxlength="255" placeholder="Digite a descrição do jogo" cols="5" rows="10" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Links">Links</label>
+                                <input type="text" id="txtLinks" name="txtLinks" data-bind="value: Link" placeholder="Digite o link da compra:ex Submarino, Saraiva, etc" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="btn-group">
+                                <input type="button" data-bind="click: Salvar" id="btnSalvar" name="btnSalvar" value="Salvar" class="btn-sm btn-info" />
+                                <input type="button" data-bind="click: Atualizar" id="btnAtualizar" name="btnAtualizar" value="Atualizar" class="btn-sm btn-success" />
+                                <input type="button" data-bind="click: Cancelar" name="btnCancelar" id="btnCancelar" value="Cancelar" class="btn-sm btn-warning" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="boxPesquisa">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" data-bind="value: TituloPesquisa" class="form-control" id="chaveTitulo" name="chaveTitulo" placeholder="pesquisa por titulo" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" data-bind="value:FornecedorPesquisa" class="form-control" id="chaveFornecedor" name="chaveFornecedor" placeholder="pesquisa por fornecedor"  />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="button" data-bind="click: Pesquisar" class="form-control btn-sm btn-success"  id="btnPesquisa" name="btnPesquisa" value="Pesquisar" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxListaTabela">
+                    <table class="table" data-bind="visible: Jogos().length > 0">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Título</th>
+                                <th>Fornecedor</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:  Jogos">
+                            <tr data-bind="click: self.SelecionarJogo">
+                                <td><span data-bind="text: Id"></span></td>
+                                <td><span data-bind="text: Titulo"></span></td>
+                                <td><span data-bind="text: Fornecedor"></span></td>
+                                <td>
+                                    <div class="btn-group">
+                                        <input type="button" data-bind="click: $root.Editar" id="btnEditar" name="btnEditar" value="Editar" class="btn-sm btn-success" />
+                                        <input type="button" data-bind="click: $root.Deletar" id="btnExcluir" name="btnExcluir" value="Excluir" class="btn-sm btn-danger" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="loader loading-overlay" id="loadOperacao" style="display: none;"></div>
+<div class="box-footer clearfix" id="mensagemResult" style="display: block;"></div>
+<input type="hidden" name="htmlMensagem" id="htmlMensagem" value="mensagemResult">
+
+
+
